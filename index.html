@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisis Dampak Hujan terhadap Produktivitas Karet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">Rutics Agency</div>
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#ringkasan" class="nav-link">Executive Summary</a></li>
+                <li><a href="#metodologi" class="nav-link">Methodology</a></li>
+                <li><a href="#visualisasi" class="nav-link">Visualization</a></li>
+                <li><a href="#eksplorasi" class="nav-link">Finder</a></li>
+                <li><a href="#tentang" class="nav-link">Author</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="container">
+            <h1>Analisis Dampak Hujan<br>terhadap Produktivitas Karet</h1>
+            <p>Studi Komprehensif tentang Pengaruh Curah Hujan pada Hasil Produksi</p>
+        </div>
+    </section>
+
+    <div class="scroll-indicator" id="scrollIndicator">↓</div>
+
+    <section id="ringkasan">
+        <div class="container">
+            <h2 class="section-title">Executive Summary</h2>
+
+            <div class="accordion-container">
+                <div class="accordion-box" onclick="toggleAccordion(0)">
+                    <div class="accordion-header">
+                        <h3>Latar Belakang</h3>
+                        <span class="accordion-arrow" id="arrow-0">▼</span>
+                    </div>
+                    <div class="accordion-content" id="content-0">
+                        <p>Curah hujan adalah faktor lingkungan yang paling dominan dan variabel yang memengaruhi hasil karet, baik secara fisiologis maupun operasional: secara fisiologis, air yang memadai dibutuhkan untuk pertumbuhan pohon dan aliran lateks, sementara kekurangan air menyebabkan cekaman dan penurunan produksi; secara operasional, hujan lebat secara langsung menghambat proses penyadapan karena lateks akan tercampur air atau gagal tertampung, yang mengakibatkan hilangnya hari panen; oleh karena itu, analisis ini krusial untuk memprediksi variabilitas hasil panen, mengoptimalkan penjadwalan penyadapan, dan merencanakan strategi mitigasi risiko perkebunan.</p>
+                    </div>
+                </div>
+                <div class="accordion-box" onclick="toggleAccordion(1)">
+                    <div class="accordion-header">
+                        <h3>Manfaat</h3>
+                        <span class="accordion-arrow" id="arrow-1">▼</span>
+                    </div>
+                    <div class="accordion-content" id="content-1">
+                        <p>memungkinkan pengelolaan perkebunan yang lebih efisien dan berkelanjutan dengan meningkatkan kemampuan prediksi hasil panen, yang krusial untuk perencanaan stok dan keuangan. Analisis ini memberikan wawasan mendalam mengenai pola optimal penyadapan dengan menghindari kerugian akibat hujan (meminimalkan rainy days lost) dan mengoptimalkan pemanfaatan tenaga kerja, serta membantu dalam perencanaan infrastruktur konservasi air atau irigasi tambahan untuk memitigasi dampak kekeringan. Secara keseluruhan, informasi yang diperoleh dari analisis ini memberdayakan para pengelola untuk mengambil keputusan berbasis data yang pada akhirnya akan menstabilkan dan meningkatkan profitabilitas perkebunan.</p>
+                    </div>
+                </div>
+                <div class="accordion-box" onclick="toggleAccordion(2)">
+                    <div class="accordion-header">
+                        <h3>Hubungan</h3>
+                        <span class="accordion-arrow" id="arrow-2">▼</span>
+                    </div>
+                    <div class="accordion-content" id="content-2">
+                        <p>Hubungan antara produktivitas karet dan curah hujan bersifat kompleks dan non-linear, sering digambarkan sebagai kurva terbalik 'U', di mana produktivitas tinggi terjadi ketika curah hujan berada pada kisaran optimal—air yang cukup penting untuk menjaga laju fotosintesis, tekanan turgor sel, dan aliran lateks. Namun, hubungan ini memiliki dua ekstrem negatif: curah hujan yang terlalu rendah menyebabkan kekeringan, stres tanaman, gugur daun, dan penurunan volume lateks, sementara curah hujan yang terlalu tinggi akan menghambat produktivitas bukan karena fisiologi, melainkan karena gangguan operasional yang signifikan pada hari penyadapan, menyebabkan lateks terkontaminasi atau hilangnya waktu panen, sehingga kedua kondisi ekstrem tersebut sama-sama menurunkan total hasil panen tahunan.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kpi-grid">
+                <div class="kpi-card">
+                    <h3>5,73</h3>
+                    <p>Average Production kg/ha saat Hujan >10mm</p>
+                </div>
+                <div class="kpi-card">
+                    <h3>6,46</h3>
+                    <p>Average Production saat Hujan ≤10mm</p>
+                </div>
+                <div class="kpi-card horizontal">
+                    <h3>-11%</h3>
+                    <p>Dampak Produktivitas</p>
+                </div>
+                <div class="kpi-card horizontal">
+                    <h3>-0,97</h3>
+                    <p>Korelasi Negatif</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="metodologi">
+        <div class="container">
+            <h2 class="section-title">Methodology</h2>
+            <h3 class="section-subtitle">Tahapan Analisis</h3>
+
+            <div class="info-grid">
+                <div class="info-item">
+                    <strong>Hujan Kritis</strong>
+                    Nilai curah hujan minimum per hari (misalnya, > 5 mm) yang dianggap cukup untuk menghentikan atau menunda penyadapan karet karena risiko kontaminasi lateks, atau ambang batas total hari hujan yang menyebabkan kerugian panen yang signifikan.
+                    <span class="info-arrow">→</span>
+                </div>
+                <div class="info-item">
+                    <strong>Ambang Dampak</strong>
+                    Disini kita mencari batas bawah dan batas atas curah hujan dimana 10 mm itu sudah menjadi batas tengah
+                    <span class="info-arrow">→</span>
+                </div>
+                <div class="info-item">
+                    <strong>Metode Analisis</strong>
+                    Menggunakan Analisis regresi linear untuk mengetahui korelasi negatifnya + t-Test membandingkan rata-rata hasil panen lateks antara dua kondisi spesifik yang terkait dengan curah hujan
+                    <span class="info-arrow">→</span>
+                </div>
+                <div class="info-item">
+                    <strong>Periode Data</strong>
+                    Analisis 2020-2024
+                </div>
+            </div>
+
+            <div style="margin-top: 40px;">
+                <p style="margin-bottom: 20px;">
+                    <strong style="color: var(--primary); font-size: 1.1em;">Definisi Operasional:</strong><br>
+                    Produktivitas Karet diukur sebagai hasil lateks kering (DRC) yang dikumpulkan dalam satuan kilogram per hektar per hari, sedangkan Curah Hujan diukur harian atau diakumulasi bulanan dalam satuan milimeter menggunakan ombrometer, penelitian ini secara khusus menguji bagaimana Ambang Batas Hujan Kritis
+                </p>
+                <p>
+                    <strong style="color: var(--primary); font-size: 1.1em;">Teknik Analisis:</strong><br>
+                    Teknik analisis utama yang digunakan dalam analisis produktivitas karet terhadap hujan meliputi analisis statistik deskriptif untuk memetakan distribusi data curah hujan dan hasil panen dari waktu ke waktu, diikuti oleh analisis regresi (Regression Analysis) untuk mengidentifikasi dan mengukur seberapa besar hubungan (korelasi) antara variabel Curah Hujan (sebagai variabel bebas) terhadap Produktivitas Karet (sebagai variabel terikat), guna menentukan rentang curah hujan optimal dan ambang dampak kritisnya, dan terakhir menggunakan Uji-t (t-test) untuk membandingkan secara signifikan rata-rata hasil panen pada kondisi curah hujan yang berbeda (misalnya, kondisi kering ekstrem vs. kondisi optimal, atau hari sadap normal vs. hari sadap yang terganggu hujan).
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="visualisasi">
+        <div class="container">
+            <h2 class="section-title">Visualization</h2>
+            <h3 class="section-subtitle">Dashboard Power BI</h3>
+
+            <div class="dashboard-container">
+                <div class="dashboard-placeholder">
+    <p>📊 Tampilan Utama Dasbor Analisis Produktivitas</p>
+    
+    <img src="Screenshot (168).png" alt="Visualisasi Utama Dashboard Power BI" style="width: 100%; max-width: 1140px; height: auto; border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);">
+    
+    </div>
+            </div>
+            <div class="keterangan-box">
+                <h4>Keterangan:</h4>
+                <ol>1. Produktivitas karet dipenagruhi oleh curah hujan, luas panen pada hari itu dan kondisi lahan</ol>
+                <ol>2. Curah hujan yg di atas 10 mm memang memengaruhi produksi lateks sesuai korelasi dari hasil regresi</ol>
+            </div>
+        </div>
+    </section>
+
+    <section id="eksplorasi">
+        <div class="container">
+            <h2 class="section-title">Finder</h2>
+
+            <div class="search-form">
+                <input type="number" id="yearInput" placeholder="Masukkan Tahun (2020-2024)" min="2020" max="2024">
+                <button onclick="searchYear()">🔍 Search</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="tentang">
+        <div class="container">
+            <h2 class="section-title">Author</h2>
+
+            <div class="leaf-decoration leaf-1">🌿</div>
+            <div class="leaf-decoration leaf-2">🍃</div>
+            <div class="leaf-decoration leaf-3">🌱</div>
+            <div class="leaf-decoration leaf-4">🌿</div>
+
+            <div class="proudly-present">Proudly Present</div>
+
+            <div class="creator-photos">
+                <div class="photo-frame" onclick="openAuthorModal('Author 1', 1)">
+                    <img src="WhatsApp Image 2025-12-04 at 5.54.26 AM.jpeg">
+                    </div>
+
+                <div class="photo-frame" onclick="openAuthorModal('Author 2', 2)">
+                    <img src="WhatsApp Image 2025-12-04 at 5.54.31 AM.jpeg">
+                    </div>
+
+                <div class="photo-frame" onclick="openAuthorModal('Author 3', 3)">
+                    <img src="WhatsApp Image 2025-12-04 at 5.54.42 AM.jpeg">
+                    </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p><strong>Email:</strong> (Rubberanalytics.@gmail.com)</p>
+        <p><strong>Telepon:</strong> (087831012006)</p>
+        <p><strong>Institusi:</strong> (Rubber Enterprise)</p>
+        <p style="margin-top: 20px; font-size: 0.9em; opacity: 0.8;">&copy; 2024 Analisis Dampak Hujan terhadap Produktivitas Karet</p>
+    </footer>
+
+    <div class="modal author-detail-modal" id="authorModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeAuthorModal()">&times;</span>
+            <h2 id="authorModalTitle">Detail Author</h2>
+            <div id="authorModalBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
