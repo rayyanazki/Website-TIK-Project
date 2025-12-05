@@ -338,21 +338,29 @@ section:last-of-type {
 .dashboard-container {
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
-    padding: 50px;
+    padding: 30px 20px;
     border-radius: 20px;
     text-align: center;
     min-height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
     border: 2px dashed var(--secondary);
     margin: 40px 0;
 }
 
 .dashboard-placeholder {
-    max-width: 600px;
+    max-width: 100%;
 }
-
+.dashboard-placeholder iframe {
+    /* Wajib: Agar margin auto bisa berfungsi pada elemen dengan lebar statis (1140px) */
+    display: block;
+    
+    /* Wajib: Untuk menengahkan elemen di dalam container */
+    margin: 0 auto;
+    transform: translateX(-10px);
+    /* Tambahan Estetika (opsional, tapi bagus) */
+    border-radius: 15px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
 .dashboard-placeholder p {
     font-size: 1.2em;
     color: var(--primary);
@@ -694,6 +702,7 @@ footer strong {
         gap: 20px;
         font-size: 0.9em;
     }
+}
 
     #hero h1 {
         font-size: 2.5em;
@@ -728,7 +737,6 @@ footer strong {
         bottom: 0;
         right: 20%;
     }
-}
 
 /* Scroll indicator */
 .scroll-indicator {
